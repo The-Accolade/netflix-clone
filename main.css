@@ -5,12 +5,12 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 .wrapper {
-  height: 100vh;
+  height: auto;
   background-size: cover;
   width: 100%;
   position: relative;
   text-align: center;
-  color:white;
+  color: #ffffff;
 }
 .wrapper::before {
    content: "";
@@ -22,17 +22,15 @@ body {
 .top {
     background-color: transparent;
     transition: background-color 0.5s;
-    position: relative;
-    max-width: 1920px;
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 5rem;
     z-index: 10;
+    position: relative;
+    margin: 0 3.5rem;
+    height: 100%;
+    padding: 20px 0px 0px;
 }
 .logo {
   height: auto;
@@ -44,21 +42,20 @@ body {
 opacity: 0.8;
 }
 .s-btn {
-  position: absolute;
-  top: 2%;
-  left: 90%;
-  background: #e50914;
-  color: white;
-  width: 100px;
-  height: 50px;
-  font-size: 1rem;
-  float: right;
-  opacity: 0.9;
-  border-radius: 5px;
-  border: 0;
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    float: right;
+}
+a.s-btn {
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 3px;
 }
 .s-btn:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 .label {
 	position: relative;
@@ -66,25 +63,31 @@ opacity: 0.8;
     padding: 75px 0;
     max-width: 640px;
     margin: 0 auto;
+    margin-top: 80px;
     text-align: center;
     z-index: 1;
 }
 
 .main {
-  font-family: Trebuchet ms;
+   font-family: 'Montserrat', sans-serif;
   max-width: 640px;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
-
+}
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
 }
 .reg {
-  display: block;
+    padding-top: .85rem;
+    box-orient: vertical;
+    flex-flow: column-reverse;
 }
 input{
-  height: 30px;
+  height: 48px;
   padding: 10px 10px 0;
-  width: 100%;
-font-family: 'Raleway', sans-serif;
+  width: 70%;
+  font-family: 'Raleway', sans-serif;
+  float: left;
 }
 
 .btn {
@@ -92,13 +95,21 @@ font-family: 'Raleway', sans-serif;
   border-radius: 3px;
   background: #e50914;
   color: white;
-   height: 40px;
-   width: 30%;
-  padding: 1rem;
-  font-size: 1rem;
+   height: 63px;
+   width: 25%;
+  font-size: 1.5rem;
  font-family: 'Raleway', sans-serif;
+ float: left;
 }
 
 .btn:hover {
-  opacity: 0.9;
+  opacity: 0.8;
+}
+.clear {
+  clear: both;
+}
+.email-title {
+  float; both;
+  display: block;
+    font-size: 1.17em;
 }
